@@ -1,1 +1,1 @@
-# Philips Hue - https://www.developers.meethue.com/
+# Philips Hue 
