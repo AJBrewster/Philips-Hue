@@ -7,8 +7,6 @@ def powerOnAll(power):
     lights = lights_get.json()
     payload = json.dumps({'on': power})
 
-    # [{'error': {'type': 2, 'description': 'body contains invalid json', 'address': '/2/state'}}]
-    # could be something wrong with :payload: or :url:
     for light in lights:
         url = base_url + 'lights/' + light + '/state'
         light_put = requests.put(url, data=payload)
