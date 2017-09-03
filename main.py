@@ -23,8 +23,8 @@ def powerOnAll(power):
 # Print light names + current power status
 def printLightInfo():
     base_url = 'http://192.168.2.22/api/MhMITSZ9EgJ2z45790rlMTZi02sXlznW82AP6Yln/'
-    lights_request = requests.get(base_url + 'lights')
-    lights = lights_request.json()
+    lights_get = requests.get(base_url + 'lights')
+    lights = lights_get.json()
 
     print('\n--- Light Status ---')
 
